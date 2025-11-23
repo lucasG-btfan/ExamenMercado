@@ -19,9 +19,9 @@ public class MutantController {
         boolean isMutant = mutantService.isMutant(request);
 
         if (isMutant) {
-            return ResponseEntity.ok().build(); // 200 OK sin body
+            return ResponseEntity.ok().build();
         } else {
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).build(); // 403 Forbidden sin body
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }
     }
 }
